@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='view'
+    )
+}}
+
 WITH all_hosts AS (
     SELECT
         *

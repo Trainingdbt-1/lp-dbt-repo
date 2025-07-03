@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='view'
+    )
+}}
+
 WITH all_listings as (
     select * from {{ ref('scr_listings') }}
 )
