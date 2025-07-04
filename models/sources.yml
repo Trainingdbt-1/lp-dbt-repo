@@ -13,5 +13,8 @@ sources:
       - name: reviews
         identifier: RAW_REVIEWS
 
+      - name: customer
+        identifier: RAW_CUSTOMER
+
       
       
