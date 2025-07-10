@@ -23,3 +23,10 @@ models:
                       'Private room',
                       'Shared room',
                       'Hotel room']
+
+  - name: dim_listing_w_hosts
+    tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+        compare_model: source('airbnb','listings')
+          
+        
