@@ -15,6 +15,8 @@ sources:
 
       - name: customer
         identifier: RAW_CUSTOMER
+      - name: sales
+        identifier: SALES_US
 
       
       
