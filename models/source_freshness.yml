@@ -1,0 +1,13 @@
+version: 2
+ 
+sources:
+  - name: AIRBNB
+    schema: RAW
+ 
+    tables:
+      - name: source_freshness_table
+        freshness:
+          warn_after: {count: 15, period: minute}
+          error_after: {count: 50, period: minute}
+        loaded_at_field: "convert_timezone ('America/Los_Angeles','UTC',created_at)"
+        #"convert_timezone ('America/Los_Angeles','UTC',created_at)"
